@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rebecca Belizaire Beauty Spot</title>
+  <meta name="description" content="Luxury nails & gel pedicures — Book with Rebecca Belizaire Beauty Spot" />
+
+  <!-- Elegant, royal fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Added Cinzel for regal headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Animated background -->
+  <div class="bg"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="container nav">
+    <a href="#" class="brand">Rebecca Belizaire <span class="gold">Beauty Spot</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking" class="pill">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero container">
+    <h1 class="led-title">
+      Elevate Your <span class="gold">Nails</span>. Embrace <span class="gold">Royalty</span>.
+    </h1>
+    <p>Signature sets, flawless finishes, and a luxe experience from start to finish.</p>
+    <a href="#booking" class="cta shimmer-target">Book Here </a>
+  </header>
+
+  <main>
+    <!-- SERVICES -->
+    <section id="services" class="section container">
+      <h2 class="section-title led-title">Services & Pricing</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Nail Extensions</h3>
+          <ul class="price-list">
+            <li>Short nails <span class="price">$35+</span></li>
+            <li>Medium nails <span class="price">$45+</span></li>
+            <li>Long nails <span class="price">$55+</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Pedicures</h3>
+          <ul class="price-list">
+            <li>Gel pedicure <span class="price">$30</span></li>
+            <li>French Tip pedicure <span class="price">$50</span></li>
+          </ul>
+          <div class="add-ons">
+            <p class="muted">Add-ons:</p>
+            <ul>
+              <li>French Tip manicure +$10</li>
+              <li>Nail designs +$10</li>
+              <li>Nail gems +$10</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section container">
+      <h2 class="section-title led-title">Gallery</h2>
+      <div class="gallery">
+        <img src="nail1.jpeg" alt="Short French Tip Nails" class="gallery-img" />
+        <img src="nail2.jpeg" alt="Pink Artistic Nails" class="gallery-img" />
+        <img src="nail3.jpeg" alt="Luxury Crystal Nails" class="gallery-img" />
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section container">
+      <h2 class="section-title led-title">Book an Appointment</h2>
+
+      <!-- Quick Contact -->
+      <div class="card quick-contact">
+        <div>
+          <div class="fine">Business email</div>
+          <code id="biz-email">therebeccabelizairebeautyspot@gmail.com</code>
+        </div>
+        <div class="quick-actions">
+          <button class="cta" id="copy-email" type="button">Copy Email</button>
+          <a class="cta" href="mailto:therebeccabelizairebeautyspot@gmail.com?subject=Booking%20Request">Open Email App</a>
+        </div>
+      </div>
+
+      <form id="booking-form" class="form form--elegant" autocomplete="on">
+        <div class="grid grid--4">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label class="field">
+            <span>Preferred Date</span>
+            <input type="date" name="date" required />
+          </label>
+          <label class="field">
+            <span>Preferred Time</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+
+        <fieldset class="group">
+          <legend>Service</legend>
+          <ul class="options">
+            <li class="option-row">
+              <input type="radio" name="service" id="svc-short" value="Short nails ($35+)" required />
+              <label class="option-label" for="svc-short">Short nails</label>
+              <span class="option-price">$35+</span>
+            </li>
+            <li class="option-row">
+              <input type="radio" name="service" id="svc-medium" value="Medium nails ($45+)" />
+              <label class="option-label" for="svc-medium">Medium nails</label>
+              <span class="option-price">$45+</span>
+            </li>
+            <li class="option-row">
+              <input type="radio" name="service" id="svc-long" value="Long nails ($55+)" />
+              <label class="option-label" for="svc-long">Long nails</label>
+              <span class="option-price">$55+</span>
+            </li>
+            <li class="option-row">
+              <input type="radio" name="service" id="svc-gelped" value="Gel pedicure ($30)" />
+              <label class="option-label" for="svc-gelped">Gel pedicure</label>
+              <span class="option-price">$30</span>
+            </li>
+            <li class="option-row">
+              <input type="radio" name="service" id="svc-frenchped" value="French Tip pedicure ($50)" />
+              <label class="option-label" for="svc-frenchped">French Tip pedicure</label>
+              <span class="option-price">$50</span>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend>Add-ons (optional)</legend>
+          <ul class="options options--two">
+            <li class="option-row">
+              <input type="checkbox" id="ad-french" name="addons" value="French Tip manicure (+$10)" />
+              <label class="option-label" for="ad-french">French Tip manicure</label>
+              <span class="option-price">+$10</span>
+            </li>
+            <li class="option-row">
+              <input type="checkbox" id="ad-designs" name="addons" value="Nail designs (+$10)" />
+              <label class="option-label" for="ad-designs">Nail designs</label>
+              <span class="option-price">+$10</span>
+            </li>
+            <li class="option-row">
+              <input type="checkbox" id="ad-gems" name="addons" value="Nail gems (+$10)" />
+              <label class="option-label" for="ad-gems">Nail gems</label>
+              <span class="option-price">+$10</span>
+            </li>
+          </ul>
+        </fieldset>
+
+        <label class="field">
+          <span>Notes</span>
+          <textarea name="notes" rows="4" placeholder="Inspo, colors, allergies, etc."></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="cta shimmer-target">Draft Booking Email</button>
+          <p class="fine">This opens your email app with details prefilled to Rebecca.</p>
+        </div>
+
+        <output id="form-status" role="status" aria-live="polite"></output>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rebecca Belizaire Beauty Spot — All Rights Reserved</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="Expanded view" />
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
