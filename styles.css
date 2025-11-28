@@ -191,6 +191,18 @@ body{
 .fine{color:var(--muted); font-size:13px}
 @media (min-width:720px){ .cards{grid-template-columns:1fr 1fr} }
 
+/* ---- Special styling for Hair Services card ---- */
+.card--hair{
+  border-color: rgba(255, 182, 217, 0.7);
+  background: linear-gradient(135deg,
+    rgba(255,255,255,0.07),
+    rgba(255,122,200,0.06));
+  box-shadow: 0 14px 32px rgba(148, 37, 102, 0.55);
+}
+.card--hair h3{
+  color:#ffe6f4;
+}
+
 /* ---- Gallery ---- */
 .gallery{
   display:grid; gap:16px; justify-items:center; padding:10px 0;
@@ -330,4 +342,46 @@ body.page-in { opacity: 1; }
   .bg, .bg::before, .bg::after, .sparkles{animation:none!important}
   .reveal, .gallery-img.reveal{transition:none!important; filter:none!important; transform:none!important; opacity:1!important}
   body{opacity:1!important}
+}
+
+/* ---- Hair Services Note Styling ---- */
+.important-note {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 4px solid var(--accent-2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 10px 0 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.important-note .note-label {
+  display:block;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-bottom: 4px;
+}
+
+.important-note .note-body {
+  display:block;
+  margin-bottom: 4px;
+}
+
+.important-note .do-not {
+  font-weight: 800;
+  color: var(--accent-2);
+  text-shadow: 0 0 6px rgba(255, 122, 200, 0.6);
+}
+
+.important-note em {
+  display: block;
+  color: #f3e6ec;
+  font-style: italic;
+  margin-top: 2px;
+  font-size: 15px;
 }
